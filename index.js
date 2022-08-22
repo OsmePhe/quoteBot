@@ -6,10 +6,10 @@ const fs = require('fs');
 const Twit  = require("twit");
 
 const T = new Twit({
-    consumer_key : "wS806NJ9j6BqJzBckC79IppXX",
-    consumer_secret : "qhmkFawk1pymBfUH7zpG1LUYQRZtGuvv7JT5UslSkuq2Uu3dbK",
-    access_token : "1450948948714266625-CzSHgdCnqIuWbLQQF120XT8oiMUbhR",
-    access_token_secret : "Vo1Lhotg4ogPdMva0gZrEjivmIqKeo6E317eaqvbRzfgJ",
+    consumer_key : process.env.REACT_APP_CONSUMER_KEY,
+    consumer_secret : process.env.REACT_APP_CONSUMER_SECRET,
+    access_token : process.env.REACT_APP_ACCESS_TOKEN,
+    access_token_secret : process.env.REACT_APP_ACCESS_TOKEN_SECRET,
 })
 var quote, wordTosearch = 'cocoBot', countSearch = '100';
 ///////////////////Upload quotes and dog on twitter
